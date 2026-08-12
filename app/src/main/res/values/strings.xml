@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Mood Planet</string>
+
+    <!-- Bienvenida -->
+    <string name="welcome_title">¡Hola! Soy Nova</string>
+    <string name="welcome_subtitle">Tu compañero para explorar el Planeta de las Emociones</string>
+    <string name="welcome_cta">Empezar</string>
+    <string name="welcome_disclaimer">Mood Planet es una app educativa. No es un tratamiento ni un diagnóstico. Si algo te preocupa mucho, habla con una persona adulta de confianza.</string>
+
+    <!-- Cómo me siento -->
+    <string name="how_do_i_feel_title">¿Cómo me siento ahora?</string>
+    <string name="intensity_title">¿Qué tan fuerte lo sientes?</string>
+    <string name="intensity_1">Un poquito</string>
+    <string name="intensity_2">Regular</string>
+    <string name="intensity_3">Mucho</string>
+    <string name="continue_button">Continuar</string>
+
+    <!-- Qué pasó -->
+    <string name="what_happened_title">¿Qué pasó?</string>
+    <string name="what_happened_subtitle">Puedes elegir una opción (es opcional)</string>
+    <string name="note_hint">Cuéntame un poco más (opcional)</string>
+    <string name="note_char_limit">%1$d/%2$d</string>
+    <string name="skip_button">Saltar</string>
+    <string name="save_button">Guardar</string>
+
+    <!-- Caja de herramientas -->
+    <string name="toolbox_title">Caja de herramientas</string>
+    <string name="toolbox_subtitle">Elige algo que te ayude ahora</string>
+
+    <!-- Respiración -->
+    <string name="breathing_title">Respiración tranquila</string>
+    <string name="breathing_inhale">Inhala…</string>
+    <string name="breathing_hold">Sostén…</string>
+    <string name="breathing_exhale">Exhala…</string>
+    <string name="breathing_round">Ronda %1$d de %2$d</string>
+    <string name="breathing_finish">¡Muy bien hecho!</string>
+
+    <!-- Historias -->
+    <string name="stories_title">Historias emocionales</string>
+    <string name="story_question_emotion">¿Cómo crees que se siente?</string>
+    <string name="story_question_reaction">¿Qué harías tú?</string>
+    <string name="story_feedback_good">¡Buena elección!</string>
+    <string name="story_feedback_try_again">Pensemos juntos otra opción</string>
+    <string name="story_next">Siguiente historia</string>
+
+    <!-- Planeta semanal -->
+    <string name="weekly_title">Mi planeta semanal</string>
+    <string name="weekly_subtitle">Últimos 7 días</string>
+    <string name="weekly_no_data">Todavía no hay registros esta semana. ¡Explora el planeta!</string>
+    <string name="weekly_disclaimer">Este resumen es solo para ver patrones y celebrar tu esfuerzo. No es un diagnóstico.</string>
+
+    <!-- Colección -->
+    <string name="collection_title">Colección de herramientas</string>
+
+    <!-- Logros / Ajustes -->
+    <string name="achievements_title">Logros</string>
+    <string name="settings_title">Ajustes</string>
+    <string name="settings_child_name">Nombre</string>
+    <string name="settings_reminders">Recordatorio diario</string>
+    <string name="settings_privacy">Privacidad y datos</string>
+    <string name="settings_about">Acerca de Mood Planet</string>
+
+    <!-- Mi voz tranquila -->
+    <string name="calm_voice_title">Mi voz tranquila</string>
+    <string name="calm_voice_instructions">Di una frase corta y tranquila, como \"Hoy me siento bien\". Mira cómo se mueve el nivel de tu voz.</string>
+    <string name="calm_voice_start">Empezar a hablar</string>
+    <string name="calm_voice_stop">Terminar</string>
+    <string name="calm_voice_no_mic">Practicar sin micrófono</string>
+    <string name="calm_voice_permission_denied">No pasa nada. Puedes practicar igual, imaginando tu voz tranquila.</string>
+    <string name="calm_voice_privacy_note">No grabamos ni guardamos tu voz. Solo mostramos el volumen mientras hablas.</string>
+
+    <!-- Hablar con adulto -->
+    <string name="talk_adult_title">Hablar con un adulto</string>
+    <string name="talk_adult_body">A veces lo mejor es contarle a una persona adulta de confianza cómo te sientes: puede ser tu mamá, tu papá, un familiar o alguien de tu escuela.</string>
+
+    <!-- Genérico -->
+    <string name="back">Atrás</string>
+    <string name="close">Cerrar</string>
+</resources>

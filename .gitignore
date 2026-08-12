@@ -1,0 +1,18 @@
+*.iml
+.gradle/
+/local.properties
+.idea/
+.DS_Store
+/build
+/captures
+.externalNativeBuild
+.cxx
+local.properties
+
+app/build/
+build/
+
+# Keystores locales (nunca deben subirse al repositorio)
+*.jks
+*.keystore
+!debug.keystore

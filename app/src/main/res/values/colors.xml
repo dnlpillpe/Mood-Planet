@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="mp_purple">#5B4EE5</color>
+    <color name="mp_purple_dark">#3A2E6E</color>
+    <color name="mp_yellow">#FFF3B0</color>
+    <color name="mp_pink">#FF8FB1</color>
+    <color name="mp_teal">#4ECDC4</color>
+    <color name="mp_green">#8BD17C</color>
+    <color name="mp_background_light">#FDFBFF</color>
+    <color name="mp_background_dark">#1C1B2E</color>
+</resources>

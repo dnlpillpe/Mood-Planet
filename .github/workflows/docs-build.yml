@@ -1,0 +1,47 @@
+name: Docs Build
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "docs/**"
+      - ".github/workflows/docs-build.yml"
+  pull_request:
+    branches: [main]
+    paths:
+      - "docs/**"
+  workflow_dispatch:
+
+jobs:
+  build-pdfs:
+    name: Generar los 3 PDF de documentación
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Configurar Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Instalar dependencias
+        run: pip install reportlab
+
+      - name: Generar PDFs
+        run: python3 docs/generate_pdfs.py docs/pdf
+
+      - name: Verificar que se generaron los 3 PDF
+        run: |
+          count=$(find docs/pdf -name "*.pdf" | wc -l)
+          echo "PDFs generados: $count"
+          if [ "$count" -ne 3 ]; then
+            echo "Se esperaban 3 PDF, se encontraron $count"
+            exit 1
+          fi
+
+      - name: Publicar PDFs como artefacto
+        uses: actions/upload-artifact@v4
+        with:
+          name: MoodPlanet-documentacion-pdf
+          path: docs/pdf/*.pdf

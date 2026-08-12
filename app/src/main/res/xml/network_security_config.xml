@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Mood Planet no realiza tráfico de red. Esta configuración bloquea
+     explícitamente el tráfico en texto plano como defensa en profundidad. -->
+<network-security-config>
+    <base-config cleartextTrafficPermitted="false" />
+</network-security-config>
