@@ -17,6 +17,7 @@ import kotlinx.coroutines.test.advanceUntilIdle
 import kotlinx.coroutines.test.resetMain
 import kotlinx.coroutines.test.runTest
 import kotlinx.coroutines.test.setMain
+import kotlinx.coroutines.ExperimentalCoroutinesApi
 import org.junit.After
 import org.junit.Before
 import org.junit.Test
@@ -29,6 +30,7 @@ import org.robolectric.annotation.Config
  * micrófono, el ejercicio "Mi voz tranquila" debe seguir siendo utilizable
  * mediante la alternativa sin micrófono, y la app NO debe bloquearse.
  */
+@OptIn(ExperimentalCoroutinesApi::class)
 @RunWith(RobolectricTestRunner::class)
 @Config(application = Application::class)
 class CalmVoiceViewModelTest {
