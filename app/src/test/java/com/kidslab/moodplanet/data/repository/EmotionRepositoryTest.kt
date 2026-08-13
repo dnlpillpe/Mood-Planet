@@ -5,6 +5,7 @@ import com.google.common.truth.Truth.assertThat
 import com.kidslab.moodplanet.TestDatabaseFactory
 import com.kidslab.moodplanet.data.local.AppDatabase
 import com.kidslab.moodplanet.data.local.seed.SeedData
+import kotlinx.coroutines.flow.first
 import kotlinx.coroutines.runBlocking
 import kotlinx.coroutines.test.runTest
 import org.junit.After
@@ -69,7 +70,7 @@ class EmotionRepositoryTest {
 
         val recent = repository.observeRecentEntries(7)
         // La primera emisión del Flow contiene el registro recién guardado.
-        val entries = kotlinx.coroutines.flow.first(recent)
+        val entries = recent.first()
         assertThat(entries).hasSize(1)
         assertThat(entries.first().entry.note.length).isEqualTo(NOTE_MAX_LENGTH)
     }
