@@ -1,5 +1,6 @@
 package com.kidslab.moodplanet.ui.calmvoice
 
+import android.annotation.SuppressLint 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.kidslab.moodplanet.audio.CalmVoiceRecorder
@@ -45,7 +46,7 @@ class CalmVoiceViewModel(
         )
         if (granted) startWithMic()
     }
-
+    @SuppressLint("MissingPermission")
     fun startWithMic() {
         stopInternal()
         _uiState.value = _uiState.value.copy(
